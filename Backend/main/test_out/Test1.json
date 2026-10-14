@@ -1,0 +1,70 @@
+{
+  "filename": "Test1.jpeg",
+  "jumlah_terdeteksi": 2,
+  "deteksi": [
+    {
+      "kelas": "Kopiko78",
+      "conf": 0.837,
+      "bbox": [
+        0.1433,
+        0.2447,
+        0.4263,
+        0.708
+      ],
+      "gizi": {
+        "Id": 16,
+        "Barcode": 8996001600221.0,
+        "Nama Produk": "Kopiko 78",
+        "Brand": null,
+        "Kategori": "Kopi Insant",
+        "Komposisi": "Air, Gula, Ekstrak Kopi(4%), Susu Bubuk Skim(3,10%),Lemak susu anhidrat",
+        "Ukuran (ml)": 240.0,
+        "Energi (kcal)": 140.0,
+        "Gula (g)": 20.0,
+        "Garam/Natrium (g/100g)": 0.12,
+        "Lemak (g)": 3.0,
+        "Protein (g)": 3.0,
+        "Karbohidrat (g)": 26.0,
+        "Grade": null
+      }
+    },
+    {
+      "kelas": "ABCChocoMaltCoffee",
+      "conf": 0.704,
+      "bbox": [
+        0.6045,
+        0.2427,
+        0.8575,
+        0.6354
+      ],
+      "gizi": {
+        "Id": 8,
+        "Barcode": 3440224600292.0,
+        "Nama Produk": "Kopi ABC Chocolate Malt",
+        "Brand": null,
+        "Kategori": "Kopi Insant",
+        "Komposisi": "Air, Gula, Krimer nabati, Kopi instan (1,4%), Susu bubuk full cream (1%), Penstabil nabati, Bubuk malt (0,09%), Perisa sintetik cokelat, Kakao bubuk (0,05%)",
+        "Ukuran (ml)": 180.0,
+        "Energi (kcal/100g)": 100.0,
+        "Gula (g/100g)": 16.0,
+        "Garam/Natrium (g/100g)": 0.6,
+        "Lemak (g/100g)": 2.0,
+        "Protein (g/100g)": 1.0,
+        "Karbohidrat (g/100g)": 19.0,
+        "Grade": null
+      }
+    }
+  ],
+  "total": {
+    "Id": 24,
+    "Barcode": 12436226200513.0,
+    "Ukuran (ml)": 420.0,
+    "Energi (kcal/100g)": 240.0,
+    "Gula (g/100g)": 36.0,
+    "Garam/Natrium (g/100g)": 0.72,
+    "Lemak (g/100g)": 5.0,
+    "Protein (g/100g)": 4.0,
+    "Karbohidrat (g/100g)": 45.0
+  },
+  "tidak_ada_di_excel": []
+}

@@ -1,0 +1,70 @@
+{
+  "filename": "Test2.jpeg",
+  "jumlah_terdeteksi": 2,
+  "deteksi": [
+    {
+      "kelas": "ABCChocoMaltCoffee",
+      "conf": 0.88,
+      "bbox": [
+        0.3102,
+        0.4017,
+        0.8018,
+        0.9599
+      ],
+      "gizi": {
+        "Id": 8,
+        "Barcode": 3440224600292.0,
+        "Nama Produk": "Kopi ABC Chocolate Malt",
+        "Brand": null,
+        "Kategori": "Kopi Insant",
+        "Komposisi": "Air, Gula, Krimer nabati, Kopi instan (1,4%), Susu bubuk full cream (1%), Penstabil nabati, Bubuk malt (0,09%), Perisa sintetik cokelat, Kakao bubuk (0,05%)",
+        "Ukuran (ml)": 180.0,
+        "Energi (kcal/100g)": 100.0,
+        "Gula (g/100g)": 16.0,
+        "Garam/Natrium (g/100g)": 0.6,
+        "Lemak (g/100g)": 2.0,
+        "Protein (g/100g)": 1.0,
+        "Karbohidrat (g/100g)": 19.0,
+        "Grade": null
+      }
+    },
+    {
+      "kelas": "ABCChocoMaltCoffee",
+      "conf": 0.823,
+      "bbox": [
+        0.2534,
+        0.0284,
+        0.8206,
+        0.4443
+      ],
+      "gizi": {
+        "Id": 8,
+        "Barcode": 3440224600292.0,
+        "Nama Produk": "Kopi ABC Chocolate Malt",
+        "Brand": null,
+        "Kategori": "Kopi Insant",
+        "Komposisi": "Air, Gula, Krimer nabati, Kopi instan (1,4%), Susu bubuk full cream (1%), Penstabil nabati, Bubuk malt (0,09%), Perisa sintetik cokelat, Kakao bubuk (0,05%)",
+        "Ukuran (ml)": 180.0,
+        "Energi (kcal/100g)": 100.0,
+        "Gula (g/100g)": 16.0,
+        "Garam/Natrium (g/100g)": 0.6,
+        "Lemak (g/100g)": 2.0,
+        "Protein (g/100g)": 1.0,
+        "Karbohidrat (g/100g)": 19.0,
+        "Grade": null
+      }
+    }
+  ],
+  "total": {
+    "Id": 16,
+    "Barcode": 6880449200584.0,
+    "Ukuran (ml)": 360.0,
+    "Energi (kcal/100g)": 200.0,
+    "Gula (g/100g)": 32.0,
+    "Garam/Natrium (g/100g)": 1.2,
+    "Lemak (g/100g)": 4.0,
+    "Protein (g/100g)": 2.0,
+    "Karbohidrat (g/100g)": 38.0
+  },
+  "tidak_ada_di_excel": []
+}
