@@ -4,6 +4,10 @@ import io
 import json
 import re
 from pathlib import Path
+from chat import answer
+
+
+
 
 import pandas as pd
 from fastapi import FastAPI, File, HTTPException, Query, UploadFile
@@ -316,6 +320,7 @@ def daftar_kelas():
 
 
 
+
 # Debug inspect Data
 @app.get("/debug/produk/{nama_kelas}")
 def debug_produk(nama_kelas: str):
@@ -362,6 +367,11 @@ async def detect(
         include_image=include_image,
     )
 
+
+#endpoint chatbot
+@app.post("/api/chat")
+def chat_route(body: dict):
+    return {"reply": answer(body["messages"], body.get("product"))}
 
 # Test all images
 @app.get("/detect-test")
