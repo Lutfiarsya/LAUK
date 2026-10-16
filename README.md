@@ -26,8 +26,9 @@ Dengan menggabungkan teknologi *computer vision* dan dataset informasi gizi, LAU
 | OpenPyXL | Membaca dataset informasi gizi dalam format Excel. |
 | Google AI Studio | Platform yang digunakan untuk mengakses dan mengintegrasikan model AI pada chatbot. |
 | Gemini Flash | Model AI yang mendukung interaksi percakapan dan memberikan respons terhadap pertanyaan pengguna. |
+| Ngrok | Mengekspos server frontend lokal ke internet melalui URL publik sehingga aplikasi dapat diakses tanpa harus menjalankan frontend pada server hosting. |
 
-## ⚙️ Cara Kerja Aplikasi
+## Cara Kerja Aplikasi
 
 1. **Pemindaian Produk** — Pengguna mengunggah gambar produk makanan atau minuman.
 2. **Deteksi Gambar** — Backend memproses gambar menggunakan model YOLO untuk mengenali produk.
@@ -35,7 +36,7 @@ Dengan menggabungkan teknologi *computer vision* dan dataset informasi gizi, LAU
 4. **Pengambilan Informasi Gizi** — Sistem mengambil informasi produk dan kandungan gizinya dari dataset.
 5. **Penampilan Hasil** — Hasil deteksi dan informasi gizi dikirim melalui API untuk ditampilkan pada frontend.
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
 ```text
 LAUK/
@@ -56,7 +57,7 @@ LAUK/
 │   └── ...
 ```
 
-## 🚀 Instalasi dan Menjalankan Aplikasi
+## Instalasi dan Menjalankan Aplikasi
 
 ### Persyaratan
 
@@ -135,6 +136,11 @@ Jalankan aplikasi:
 
 ```bash
 npm run dev
+```
+
+Menjalankan ngrok (Optional, jika ingin dapat diakses oleh internat)
+```bash
+ngrok http 5173
 ```
 
 Buka alamat lokal yang ditampilkan oleh Vite pada terminal untuk mengakses aplikasi.
