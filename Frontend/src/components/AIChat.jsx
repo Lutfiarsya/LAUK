@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { Icon } from "@iconify/react";
 
-// Ganti dengan alamat server app.py kamu.
-// Jangan taruh API key LLM di sini, frontend bisa dilihat siapa saja.
 const API_URL = "http://localhost:8000/api/chat";
 
 const QUICK = [
-  { label: "Activity", prompt: "Aktivitas apa yang cocok untuk kondisiku?" },
-  { label: "Food", prompt: "Tolong sarankan makanan kemasan yang rendah gula." },
-  { label: "Progress", prompt: "Bagaimana progres asupan gulaku?" },
+  { icon: 'griddy-icons:muscle-flex', label: "Activity", prompt: "Aktivitas apa yang cocok untuk kondisiku?" },
+  { icon: 'mdi:food-drumstick-outline', label: "Food", prompt: "Tolong sarankan makanan kemasan yang rendah gula." },
+  { icon: 'andrsrxn:clock', label: "Progress", prompt: "Bagaimana progres asupan gulaku?" },
 ];
 
 const SUGGESTED = [
@@ -138,9 +137,9 @@ const AIChat = ({ product = null, userName = "M. Taufik", avatarSrc = null }) =>
                 key={q.label}
                 type="button"
                 onClick={() => send(q.prompt)}
-                className="flex items-center gap-2 rounded-full border border-[#f5b85c] bg-white px-5 py-2.5 text-sm font-medium hover:bg-[#fff8e1] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f59300]"
+                className="flex items-center text-[var(--Primary-color)] gap-2 rounded-full border border-[#f5b85c] bg-white px-5 py-2.5 text-sm font-medium hover:bg-[#fff8e1] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f59300]"
               >
-                <ClockBadge />
+                <Icon icon={q.icon} fontSize={24}/>
                 {q.label}
               </button>
             ))}
