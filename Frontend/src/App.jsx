@@ -6,6 +6,9 @@ import ScanProduct from './components/ScanProduct'
 import AIChat from './components/AIChat'
 import Profile from './components/Profile'
 import DetailGizi from './components/DetailGizi'
+import profilePicture from './assets/pp.jfif'
+
+
 
 const NO_BOTTOM_BAR = ['/scan']
 
@@ -19,7 +22,7 @@ function AppRoutes() {
         <Route path='/' element={<Home />} />
         <Route path='/insight' element={<Insight />} />
         <Route path='/scan' element={<ScanProduct />} />
-        <Route path='/ai-consultant' element={<AIChat />} />
+        <Route path='/ai-consultant' element={<AIChat userName='M. Taufik' avatarSrc={profilePicture}/>} />
         <Route path='/profile' element={<Profile />} />
         <Route path="/detail-gizi" element={<DetailGizi />}/>
       </Routes>
